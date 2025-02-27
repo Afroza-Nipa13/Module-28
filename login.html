@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body class="bg-slate-800">
+    <section class="bg-gray-200 mx-auto py-6">
+     <header>
+        <nav class="flex justify-center items-center mt-6">
+            <div class="relative mt-10 flex justify-center items-center w-9/12 mb-10">
+                <img class="absolute w-48" src="./assets/bg.png" alt="">
+                <img class="w-16" src="./assets/Group.png" alt="">
+            </div>
+        </nav>
+     </header>   
+    
+<!-- login section -->
+    <div class="">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          
+          <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Account Number</span>
+                </label>
+                <input value="01334556723" id="nameInput" type="number" placeholder="Enter your account number" class="input border-none rounded-full bg-gray-200 text-gray-700" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">4-digit Pin</span>
+                </label>
+                <input value="1234" id="passwordInput" type="text" placeholder="Enter 4 Digit pin" class="input border-none rounded-full bg-gray-200 text-gray-700" required />
+                </div>
+              <div class="form-control mt-6">
+                <button id="login-btn" class="btn bg-blue-700 text-white rounded-full">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/login.js"></script>
+    <script src="js/add-money.js"></script>
+</body>
+</html>
