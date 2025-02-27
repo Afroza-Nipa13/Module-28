@@ -6,7 +6,7 @@ document.getElementById("add-money-btn")
     const account =document.getElementById("account-number").value;
     const mainAmount = getInnerTextByID("balance");
     const SelectABank= document.getElementById("allbank").value;
-    console.log(SelectABank);
+    // console.log(SelectABank);
     
     if(amount < 0){
         alert('There is no amount given in the box');

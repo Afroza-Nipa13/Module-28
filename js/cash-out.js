@@ -3,9 +3,10 @@ document.getElementById("cash-out-btn")
  
     event.preventDefault();
 const accountNumber = document.getElementById("account-number").value;
+const mainAmount =getInnerTextByID("balance");
 const pin =getInputValueByID("cash-out-pin");
 const amount =getInputValueByID("cash-out-amount");
-const mainAmount =getInnerTextByID("balance");
+
 
 if(amount > mainAmount){
     alert('amount is not available in your account.');
@@ -17,12 +18,16 @@ if( accountNumber.length === 11){
         setInnerTextByIDandValue("balance",sum);
 
         const container = document.getElementById("transection-container");
-            const p = document.createElement("p");
-            p.innerText = `
-            Cash out ${amount}taka from ${accountNumber} account.
+            
+            const div = document.createElement("div");
+            div.classList.add("bg-blue-400")
+            div.innerHTML = `
+            <h1 class="text-red-500 font-bold text-3xl">Cash out</h1> 
+            <h3>${amount}taka</h3> 
+            <p>from ${accountNumber} account.</p>
             
             `
-            container.appendChild(p); 
+            container.appendChild(div); 
 
 
 

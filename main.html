@@ -48,7 +48,7 @@
         <h3 class="font-semibold">Cashout</h3>
 
     </div>
-    <div class="box border border-gray-400 shadow-lg rounded-lg cursor-pointer p-5 text-center">
+    <div id="transfer-money-box" class="box border border-gray-400 shadow-lg rounded-lg cursor-pointer p-5 text-center">
         <img class="w-9 mx-auto" src="assets/transaction1.png" alt="">
         <h3 class="font-semibold">Transfer Money</h3>
 
@@ -70,7 +70,7 @@
     </div>
  </div>
     
- <!-- login section -->
+ <!-- main section -->
         <section id="add-money">
        <h1>Add Money</h1>
         <div class="hero-content flex-col lg:flex-row-reverse">
@@ -151,15 +151,53 @@
                    </div>
                  </div>
           </section>
-     
-          <section id="transection-history">
-            <h1 class="text-red-400 font-bold p-6 text-5xl shadow-lg text-center">Transection History</h1>
-           <div id="transection-container">
-
-           </div>
-          </section>      
+    
+    <!--transfer money  -->
+          <section id="transfer-money">
+            <div class="">
+              <h1>Transfer Money</h1>
+                 <div class="hero-content flex-col lg:flex-row-reverse">
+                   
+                     
+                   
+                     <div class="card w-full shrink-0 shadow-2xl">
+                     <form class="card-body">
+                         
+                       <div class="form-control">
+                         <label class="label">
+                           <span class="label-text">Use Account Number</span>
+                         </label>
+                         <input value="01234567890"  id="transfer-account-number" type="number" placeholder="Enter account number" class="input border-none rounded-full bg-white text-gray-700" required />
+                       </div>
+                       <div class="form-control">
+                         <label class="label">
+                           <span class="label-text">Amount</span>
+                         </label>
+                         <input id="transfer-amount" type="number" placeholder="Enter amount to transfer" class="input border-none rounded-full bg-white text-gray-700" required />
+                       </div>
+         
+                       <div class="form-control">
+                         <label class="label">
+                           <span class="label-text">PIN</span>
+                         </label>
+                         <input value="1234" id="transfer-pin" type="text" placeholder="Enter 4 Digit pin" class="input border-none rounded-full bg-white text-gray-700" required />
+                         </div>
+                       <div class="form-control mt-6">
+                         <button id="transfer-money-btn" class="btn bg-blue-700 text-white rounded-full">Send Money</button>
+                       </div>
+                     </form>
+                   </div>
+                 </div>
+               </div>
+          </section>     
     </section>
-     
+   <!--transection history section  -->
+   <section id="transection-history">
+    <h1 class="text-red-400 font-bold p-6 text-5xl shadow-lg text-center">Transection History</h1>
+   <div id="transection-container">
+
+   </div>
+  </section>    
     
 </header> 
     <script src="./js/utilities/toggle.js"></script>
@@ -167,6 +205,7 @@
     <script src="js/add-money.js"></script>
     <script src="js/cash-out.js"></script>
     <script src="js/transection.js"></script>
+    <script src="js/transfermoney.js"></script>
 
   
 </body>
